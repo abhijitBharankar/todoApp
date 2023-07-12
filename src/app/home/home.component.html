@@ -1,0 +1,19 @@
+<nav class="navbar navbar-expand-lg bg-body-secondary py-3">
+    <div class="container-fluid">
+        <a class="navbar-brand text-primary" href="#">Todo App</a>
+        <button class="btn btn-primary" (click)="createTodo()">Create New Todo</button>
+    </div>
+</nav>
+
+
+<div class="container">
+    <div *ngIf="noTodos">
+        <p class="text-danger mt-4">No todos found. create new one</p>
+        <button class="btn btn-primary mt-2 " (click)="createTodo()">Create New Todo</button>
+    </div>
+    <div class="card m-4 p-2 todo" *ngFor="let res of response">
+        <h6 class="card-title">{{res.todoTitle}}</h6>
+        <p class="card-body">{{res.todoDesc}}</p>
+        <button class="btn btn-danger mb-4" (click)="delete(res.id)">Delete</button>
+    </div>
+</div>

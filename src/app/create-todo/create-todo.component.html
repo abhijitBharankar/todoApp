@@ -1,0 +1,11 @@
+<h1 class="text-primary text-center mt-3">Toto App</h1>
+<div class="form-container container-fluid m-4">
+  <form action="" [formGroup]="createTodoForm" class="m-4 bg-body-secondary p-4">
+    <label for="todoTitle" class="form-label">Enter todo title: </label>
+    <input type="text" class="form-control" formControlName = "todoTitle">
+    <label for="todoDesc" class="form-label">Enter todo description: </label>
+    <input type="text" class="form-control" formControlName = "todoDesc">
+    <button class="btn btn-success mx-2" (click)="create()">Create Todo</button>
+    <button class="btn btn-primary mx-2" (click)="back()">Back</button>
+  </form>
+</div>

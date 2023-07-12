@@ -1,0 +1,14 @@
+.container{
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    flex-wrap: wrap;
+}
+
+.todo{
+    width: 300px;
+}
+
+.todo *{
+    margin: 0;
+}

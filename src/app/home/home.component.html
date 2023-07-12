@@ -9,7 +9,7 @@
 <div class="container">
     <div *ngIf="noTodos">
         <p class="text-danger mt-4">No todos found. create new one</p>
-        <button class="btn btn-primary mt-2 " (click)="createTodo()">Create New</button>
+        <button class="btn btn-primary mt-2 " (click)="createTodo()">Create New Todo</button>
     </div>
     <div class="card m-4 p-2 todo" *ngFor="let res of response">
         <h6 class="card-title">{{res.todoTitle}}</h6>
